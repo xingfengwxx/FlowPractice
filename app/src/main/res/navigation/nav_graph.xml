@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_homeFragment_to_sharedFlowFragment"
             app:destination="@id/sharedFlowFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_movieFragment"
+            app:destination="@id/movieFragment" />
     </fragment>
     <fragment
         android:id="@+id/userFragment"
@@ -48,4 +51,9 @@
         android:name="com.wangxingxing.flowpractice.fragment.SharedFlowFragment"
         android:label="fragment_shared_flow"
         tools:layout="@layout/fragment_shared_flow" />
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.wangxingxing.flowpractice.fragment.MovieFragment"
+        android:label="fragment_movie"
+        tools:layout="@layout/fragment_movie" />
 </navigation>

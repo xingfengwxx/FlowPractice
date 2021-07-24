@@ -46,6 +46,10 @@ class HomeFragment : Fragment() {
             btnSharedFlow.setOnClickListener {
                 findNavController().navigate(R.id.action_homeFragment_to_sharedFlowFragment)
             }
+
+            btnFlowAndPaging.setOnClickListener {
+                findNavController().navigate(R.id.action_homeFragment_to_movieFragment)
+            }
         }
     }
 

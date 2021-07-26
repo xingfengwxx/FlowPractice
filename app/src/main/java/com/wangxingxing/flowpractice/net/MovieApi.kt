@@ -12,7 +12,7 @@ import retrofit2.http.Query
  */
 interface MovieApi {
 
-    @GET("pkds.do")
+    @GET("/pagingserver_war/pkds.do")
     suspend fun getMovies(
         @Query("page") page: Int,
         @Query("pagesize") pageSize: Int

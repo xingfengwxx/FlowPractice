@@ -27,7 +27,7 @@ object RetrofitClient {
         interceptor.level = HttpLoggingInterceptor.Level.BODY
         Retrofit.Builder()
             .client(OkHttpClient.Builder().addInterceptor(interceptor).build())
-            .baseUrl("http://192.168.0.11:8080/pagingserver_war/")
+            .baseUrl("http://192.168.0.11:8080")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }

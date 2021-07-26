@@ -13,6 +13,6 @@ import retrofit2.http.Query
 interface ArticleApi {
 
     //注意这里不写斜杠
-    @GET("article")
+    @GET("/kotlinstudyserver/article")
     suspend fun searchArticles(@Query("key") key: String): List<Article>
 }

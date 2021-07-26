@@ -50,6 +50,10 @@ class HomeFragment : Fragment() {
             btnFlowAndPaging.setOnClickListener {
                 findNavController().navigate(R.id.action_homeFragment_to_movieFragment)
             }
+
+            btnWanAndroid.setOnClickListener {
+                findNavController().navigate(R.id.action_homeFragment_to_wanAndroidFragment)
+            }
         }
     }
 

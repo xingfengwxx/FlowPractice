@@ -20,6 +20,10 @@ object RetrofitClient {
     // http://192.168.1.4:8080/kotlinstudyserver/
     // http://192.168.1.4:8080/pagingserver_war/
 
+    // https://www.wanandroid.com/article/list/0/json
+
+    private val BASE_URL = "https://www.wanandroid.com/"
+
     private val instance: Retrofit by lazy {
         val interceptor = HttpLoggingInterceptor(HttpLoggingInterceptor.Logger {
             Log.d(TAG, it)
@@ -27,7 +31,7 @@ object RetrofitClient {
         interceptor.level = HttpLoggingInterceptor.Level.BODY
         Retrofit.Builder()
             .client(OkHttpClient.Builder().addInterceptor(interceptor).build())
-            .baseUrl("http://192.168.0.11:8080")
+            .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }

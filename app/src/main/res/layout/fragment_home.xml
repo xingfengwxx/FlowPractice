@@ -48,4 +48,11 @@
         android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:text="Flow And Paging3"/>
+
+    <Button
+        android:id="@+id/btn_wan_android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="To WanAndroid Article"/>
 </LinearLayout>

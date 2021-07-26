@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_homeFragment_to_movieFragment"
             app:destination="@id/movieFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_wanAndroidFragment"
+            app:destination="@id/wanAndroidFragment" />
     </fragment>
     <fragment
         android:id="@+id/userFragment"
@@ -56,4 +59,8 @@
         android:name="com.wangxingxing.flowpractice.fragment.MovieFragment"
         android:label="fragment_movie"
         tools:layout="@layout/fragment_movie" />
+    <fragment
+        android:id="@+id/wanAndroidFragment"
+        android:name="com.wangxingxing.flowpractice.fragment.WanAndroidFragment"
+        android:label="WanAndroidFragment" />
 </navigation>

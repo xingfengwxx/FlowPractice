@@ -22,7 +22,7 @@ object RetrofitClient {
 
     // https://www.wanandroid.com/article/list/0/json
 
-    private val BASE_URL = "https://www.wanandroid.com/"
+    private val BASE_URL = "http://121.4.214.140:8080/"
 
     private val instance: Retrofit by lazy {
         val interceptor = HttpLoggingInterceptor(HttpLoggingInterceptor.Logger {

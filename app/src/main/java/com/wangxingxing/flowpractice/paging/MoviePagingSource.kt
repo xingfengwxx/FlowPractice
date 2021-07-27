@@ -19,7 +19,7 @@ import java.lang.Exception
 class MoviePagingSource : PagingSource<Int, Movie>() {
 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Movie> {
-        delay(2000)
+//        delay(2000)
         val currentPage = params.key ?: 1
         val pageSize = params.loadSize
 

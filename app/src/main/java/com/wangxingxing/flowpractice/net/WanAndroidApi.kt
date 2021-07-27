@@ -12,6 +12,6 @@ import retrofit2.http.Path
  */
 interface WanAndroidApi {
 
-    @GET("/article/list/{page}/json")
+    @GET("https://www.wanandroid.com/article/list/{page}/json")
     suspend fun getArticle(@Path("page") page: Int): WAArticle
 }
